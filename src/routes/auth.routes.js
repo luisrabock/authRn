@@ -14,9 +14,9 @@ const AuthRoutes = (React.FC = () => (
         title: 'SignIn',
         headerTitleStyle: {textAlign: 'center', alignSelf: 'center'},
         headerStyle: {
-          backgroundColor: '#2c3e50',
+          backgroundColor: '#fff',
         },
-        headerTintColor: '#fff',
+        headerTintColor: '#000',
       }}
     />
   </AuthStack.Navigator>
