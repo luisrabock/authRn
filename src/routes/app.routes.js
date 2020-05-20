@@ -3,12 +3,12 @@ import Dashboard from '../pages/Dashboard/index';
 
 import {createStackNavigator} from '@react-navigation/stack';
 
-const AuthStack = createStackNavigator();
+const AppStack = createStackNavigator();
 
-const DashboardRoutes = (React.FC = () => (
-  <AuthStack.Navigator>
-    <AuthStack.screen name="Dashboard" component={Dashboard} />
-  </AuthStack.Navigator>
+const AppRoutes = (React.FC = () => (
+  <AppStack.Navigator>
+    <AppStack.Screen name="Dashboard" component={Dashboard} />
+  </AppStack.Navigator>
 ));
 
-export default DashboardRoutes;
+export default AppRoutes;
