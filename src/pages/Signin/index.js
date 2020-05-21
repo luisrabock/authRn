@@ -7,15 +7,13 @@ const styles = StyleSheet.create({
 });
 
 const SignIn = (React.FC = () => {
-  const {signed, signIn, user} = useContext(AuthContext);
-  console.log('signed..', signed);
-  console.log('user..', user);
+  const {signIn} = useContext(AuthContext);
   function handleSignIn() {
     signIn();
   }
   return (
     <View style={styles.container}>
-      <Button title="SignIn" onPress={handleSignIn} />
+      <Button title="Sign In" onPress={handleSignIn} />
     </View>
   );
 });
